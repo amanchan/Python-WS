@@ -1,3 +1,8 @@
-#H1 Python Projects 
+# Python Projects 
 
-todo:
+## scrapper
+Web scraping program
+
+## todo:
+Creates a *todo* list. Uses sqlite, tortoise ORM
+
