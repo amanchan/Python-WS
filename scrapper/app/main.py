@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from .scrapper import pages, feeds
 
-app=FastAPI()
+app=FastAPI(title="Web Scraping using FastAPI",
+            description="This app retrieves data from Reuters news website")
 
 
 @app.get("/pages")
