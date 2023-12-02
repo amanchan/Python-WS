@@ -10,7 +10,7 @@ def index():
     return {"Status": "File upload app running"}
 
 
-@app.post("/upload")
+@app.post("/upload", tags=['File Upload'])
 async def upload(file: UploadFile= File(...)):
     file_ext = file.filename.split('.').pop()
     file_name = token_hex(10)
@@ -22,7 +22,7 @@ async def upload(file: UploadFile= File(...)):
     return {"success": True, "file_path": file_path, "message": "File uploaded successfully"}
 
 
-@app.post("/uploadWithData")
+@app.post("/uploadWithData", tags=['File Upload'])
 async def upload(file: Annotated[UploadFile, File], token: Annotated[str | None, Form()] = None):
     file_ext = file.filename.split('.').pop()
     file_name = token_hex(10)
