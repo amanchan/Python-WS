@@ -1,0 +1,12 @@
+.env
+fileUploader
+mail-sender
+.vscode
+scrapper
+todo
+python-microservices/.idea/workspace.xml
+python-microservices/cast-service/env/*
+python-microservices/movie-service/env/*
+
+*.pyc
+*.pyc
